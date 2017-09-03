@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "numpy-tutorial", "numpy-tutorial.pyproj", "{1B2CC956-0FA3-4E8A-AC18-D2BE6924DA94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B2CC956-0FA3-4E8A-AC18-D2BE6924DA94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2CC956-0FA3-4E8A-AC18-D2BE6924DA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EDD2AD9-63B7-4B8A-BA58-3FDE8804AABF}
+	EndGlobalSection
+EndGlobal
