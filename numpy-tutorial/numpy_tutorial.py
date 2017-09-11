@@ -36,3 +36,13 @@ print(f"arange(0.5, 10, 0.8) is {a}")
 print(f"arange result type: {type(a)}")
 print(f"arange shape: {a.shape}")
 
+#linspace
+a = np.linspace(1, 10) #return 50 elements between 1, and 10
+print(f"np.linspace(1, 10) is {a}")
+
+a = np.linspace(1, 10, num=10, endpoint=False) #returns 10 elements between 1, 10 excluding 10
+print(f"linspace(1, 10, num=10, endpoint=False) is : {a}")
+
+a, spacing = np.linspace(1, 10, num=10, endpoint=False, retstep=True)
+print(f"spacing is: {spacing}")
+
