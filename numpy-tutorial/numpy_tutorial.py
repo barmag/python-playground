@@ -27,3 +27,12 @@ a = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
 s = a[:2, 1:3]
 print(s)
 
+#arange
+a = np.arange(10.4) #stop at 10.4 and start at 0 with step 1 and data type float
+print(f"arange(10.4) is {a}")
+
+a = np.arange(0.5, 10, 0.8)
+print(f"arange(0.5, 10, 0.8) is {a}")
+print(f"arange result type: {type(a)}")
+print(f"arange shape: {a.shape}")
+
