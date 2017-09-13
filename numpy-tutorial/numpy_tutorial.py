@@ -55,3 +55,7 @@ print(f"reshpaed back {a}")
 # slicing with step
 b = a[::2]
 print(f"slicing with step {b}")
+
+# reversing array
+r = b[::-1]
+print(f"reversed array {r}")
