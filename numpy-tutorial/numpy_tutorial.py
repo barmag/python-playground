@@ -46,3 +46,12 @@ print(f"linspace(1, 10, num=10, endpoint=False) is : {a}")
 a, spacing = np.linspace(1, 10, num=10, endpoint=False, retstep=True)
 print(f"spacing is: {spacing}")
 
+# reshape
+a = np.arange(28).reshape(7, 4)
+print(f"reshaped one dim array {a}")
+a = a.reshape(-1)
+print(f"reshpaed back {a}")
+
+# slicing with step
+b = a[::2]
+print(f"slicing with step {b}")
