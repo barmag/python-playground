@@ -40,10 +40,25 @@ def dummy_is_unique_with_sorting(word):
 
     return True
 
+def is_unique(word):
+    '''
+    implementation with boolean array O(n)
+    '''
+    all_chars = [False] * max_char_length()
+    for c in word:
+        index = ord(c) - ord('A')
+        if all_chars[index]:
+            return False
+        all_chars[index] = True
+    return True
+
 assert max_char_length() == 57
 assert dummy_is_unique(c1) == False
 assert dummy_is_unique(c2) == True
 
 assert dummy_is_unique_with_sorting(c1) == False
 assert dummy_is_unique_with_sorting(c2) == True
+
+assert is_unique(c1) == False
+assert is_unique(c2) == True
 print("success!")
