@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b609e0d9-aa06-4c2a-a94a-54219a7f1aed</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>isunique-chars-in-string.py</StartupFile>
+    <StartupFile>check-permutation.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="binary-search.py" />
+    <Compile Include="check-permutation.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="isunique-chars-in-string.py">
       <SubType>Code</SubType>
     </Compile>
