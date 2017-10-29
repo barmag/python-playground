@@ -6,6 +6,8 @@ class GameState:
         self.num_cols = 2
         self.board = [[0] * self.num_cols for i in range(self.num_rows)]
         self.board[2][1] = 1
+        self.parity = 0
+        self.player_loc = [None, None]
         print(self.board)
     
     def forecast_move(self, move):
@@ -17,8 +19,11 @@ class GameState:
         move: tuple
             The target position for the active player's next move
         """
-        
-        #game = copy.deepcopy(self)
+        game = copy.deepcopy(self)
+        x, y = move
+        self.board[x][y] = 1
+        self.player_loc[self.parity] = move
+        self.parity ^= 1
         
     
     def get_legal_moves(self):
