@@ -40,8 +40,21 @@ class GameState:
         the zero-indexed coordinates on the board.
         """
         current_loc = self.player_loc[self.parity]
+        # if player first move, return the whole board
         if not current_loc:
             return [(x, y) for x in range(self.num_rows) for y in range(self.num_cols) if self.board[x][y] != 1 ]
+
+        moves = []
+        rays = [(1, 0), (1, -1), (0, -1), (-1, -1),
+                (-1, 0), (-1, 1), (0, 1), (1, 1)]
+        for dx, dy in rays:
+            _x, _y = current_loc
+            while 0 <= _x + dx < self.num_rows and 0 <= _y + dy < self.num_cols:
+                _x, _y = _x + dx, _y + dy
+                if self.board[_x][_y]:
+                    break
+                moves.append((_x, _y))
+        return moves
 
 
 print("Creating empty game board...")
