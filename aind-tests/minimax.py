@@ -71,7 +71,12 @@ def min_value(gameState):
     otherwise return the minimum value over all legal child
     nodes.
     """
-    pass
+    if terminal_test(gameState):
+        return 1
+    v = float('inf')
+    for move in gameState.get_legal_moves():
+        v = min(v, max_value(gameState.forecast_move(move)))
+    return v
 
 
 def max_value(gameState):
