@@ -84,9 +84,12 @@ def max_value(gameState):
     otherwise return the maximum value over all legal child
     nodes.
     """
-    pass
-
-
+    if terminal_test(gameState):
+        return -1
+    v = float('-inf')
+    for move in gameState.get_legal_moves():
+        v = max(v, min_value(gameState.forecast_move(move)))
+    return v
 
 print("Creating empty game board...")
 g = GameState()
