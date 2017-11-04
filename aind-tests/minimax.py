@@ -73,9 +73,7 @@ def min_value(gameState):
     """
     if terminal_test(gameState):
         return 1
-    v = float('inf')
-    for move in gameState.get_legal_moves():
-        v = min(v, max_value(gameState.forecast_move(move)))
+    v = min(map(lambda m: max_value(gameState.forecast_move(m)), gameState.get_legal_moves()))
     return v
 
 
@@ -86,9 +84,7 @@ def max_value(gameState):
     """
     if terminal_test(gameState):
         return -1
-    v = float('-inf')
-    for move in gameState.get_legal_moves():
-        v = max(v, min_value(gameState.forecast_move(move)))
+    v = max(map(lambda m: min_value(gameState.forecast_move(m)), gameState.get_legal_moves()))
     return v
 
 def minimax_decision(gameState):
