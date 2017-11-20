@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "aind-tests", "aind-tests.pyproj", "{1F199918-8E1A-4B1A-91E6-0FCBE01F0418}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "aind-search", "..\aind-search\aind-search.pyproj", "{8960B6C9-C19F-49F5-B4D4-3D043252FB78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1F199918-8E1A-4B1A-91E6-0FCBE01F0418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1F199918-8E1A-4B1A-91E6-0FCBE01F0418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8960B6C9-C19F-49F5-B4D4-3D043252FB78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8960B6C9-C19F-49F5-B4D4-3D043252FB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
